@@ -6,10 +6,16 @@
 		"type": "shadowtls",
 		"listen": "::",
 		"listen_port": 4443,
-		"version": 2,
-		"password": "woman life liberty",
+		"version": 3,
+		"strict_mode": true,
+		"users": [
+			{
+				"name": "user1",
+				"password": "XTVsAyFnREiRn5hgrjUAu8a9dSsicFKYIJM+K8+Iv8g="
+			}
+		],
 		"handshake": {
-			"server": "google.com",
+			"server": "www.apple.com",
 			"server_port": 443
 		},
 		"detour": "shadowsocks-in"
@@ -17,8 +23,8 @@
 		"type": "shadowsocks",
 		"tag": "shadowsocks-in",
 		"listen": "127.0.0.1",
-		"method": "2022-blake3-aes-128-gcm",
-		"password": "8JCsPssfgS8tiRwiMlhARg=="
+		"method": "2022-blake3-chacha20-poly1305",
+		"password": "NZew3ZrmZjxullszmAKtfu+pZh0F1dxnIPcwlaStjyI="
 	}],
 	"outbounds": [{
 		"type": "direct",
